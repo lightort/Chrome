@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+ * Copyright 2013 The Chromium Authors. All rights reserved.  Use of this
+ * source code is governed by a BSD-style license that can be found in the
+ * LICENSE file.
+-->
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="content_script.js">
+    </script>
+</head>
+
+<body>
+    <h2>Fill a form from json</h2>
+    <h3>Paste the json text:</h3>
+    <textarea id="textarea_json" style="width:93%;height:55%" autofocus></textarea>
+    <br>
+    <button id="button_fill_form_from_json">Fill form from json</button>
+    <h3>Get json from URL:</h3>
+    <input type="text" id="input_fileurl" name="input_fileurl" style="width:93%;margin-bottom:3px" />
+    <br>
+    <button id="button_fill_form_from_url">Fill form from URL</button>
+    <br>
+    <br>
+    
+    <button id="connect-button">Connect</button>
+    <input id="input-text" type="text" />
+    <button id="send-message-button">Send</button>
+    <div id="response"></div>
+</body>
+
+</html>

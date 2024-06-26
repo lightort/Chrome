@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Native Messaging Example",
+  "version": "1.0",
+  "description": "Send a message to a native application.",
+  "action": {
+    "default_title": "Native Messaging Example",
+    "default_popup": "main.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type":"module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_script.js",
+        "inject.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "nativeMessaging",
+    "activeTab",
+    "storage"
+  ]
+}
